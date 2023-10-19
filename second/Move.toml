@@ -1,0 +1,19 @@
+[package]
+name = "second"
+version = "1.0.0"
+authors = []
+
+[addresses]
+first = "0x2cb4c8f8467ba6a13ded26c1758241514380b0a8f5dd54831d41cdc2384bca5c"
+
+[dev-addresses]
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "mainnet"
+subdir = "aptos-move/framework/aptos-framework"
+
+[dependencies.first]
+local = "../first"
+
+[dev-dependencies]
